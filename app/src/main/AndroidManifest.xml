@@ -45,6 +45,7 @@
         </activity>
         <activity android:name=".NearByCafes"></activity>
         <activity android:name=".MainActivity"></activity>
+        <activity android:name=".SecondMapPage"></activity>
     </application>
 
 </manifest>
