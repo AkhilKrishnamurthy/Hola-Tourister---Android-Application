@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent">
+
+    <fragment
+        xmlns:map="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MapsActivity" />
+
+    <EditText
+    style = "@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="248dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText"
+        android:layout_weight="0.5"
+        android:inputType="textPersonName"
+        android:hint="Search Location"
+        android:ems="10"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.5"
+        android:onClick="searchLocation"
+        android:text="Search"
+        android:layout_marginLeft="212dp"
+        android:maxWidth="10dp"
+        android:maxHeight="5dp"/>
+
+
+    <!--<EditText-->
+        <!--android:id="@+id/editText"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:ems="10"-->
+        <!--android:inputType="textPersonName"/>-->
+
+
+    <!--<Button-->
+        <!--android:id="@+id/searchLocation"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="Search"-->
+        <!--android:layout_marginLeft="212dp"-->
+        <!--android:maxWidth="10dp"-->
+        <!--android:maxHeight="5dp"/>-->
+
+    <Button
+        android:id="@+id/btnRestaurant"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nearby Restaurants"
+        android:layout_marginTop="40dp"/>
+
+
+    <Button
+        android:id="@+id/buttonNext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="550dp"
+        android:layout_weight="0.5"
+        android:maxWidth="10dp"
+        android:maxHeight="5dp"
+        android:onClick="seeReviews"
+        android:text="Ratings" />
+
+
+    <!--</FrameLayout>-->
+
+</FrameLayout>
+
